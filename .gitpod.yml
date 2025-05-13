@@ -1,0 +1,9 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: Update system
+    init: |
+      sudo apt update && sudo apt upgrade -y
+  - name: CKAN Setup
+    command: bash setup.sh
